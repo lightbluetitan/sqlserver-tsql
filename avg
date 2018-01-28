@@ -1,0 +1,10 @@
+/* the following T-SQL code helps you out to get the average on two grades
+*/
+declare @nota1 tinyint
+declare @nota2 tinyint
+declare @avg decimal(4,2)
+set @nota1 = 14
+set @nota2 = 16
+set @avg=(@nota1 + @nota2)/2.0
+print 'Fecha Evaluación: ' + CONVERT(VARCHAR(20),GETDATE(),105)
+print 'Promedio Final: ' + CONVERT(VARCHAR(20),@avg) 
